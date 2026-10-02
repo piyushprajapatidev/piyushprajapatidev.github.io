@@ -1,0 +1,1 @@
+const text="./build-mobile-products --android --ios --cross-platform";let i=0;const el=document.getElementById("typing");function type(){if(i<text.length){el.textContent+=text[i++];setTimeout(type,38)}}type();
