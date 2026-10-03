@@ -1,62 +1,15 @@
 /**
- * Piyush Prajapati - Portfolio Interactions
- * Mobile Menu, Dynamic Typing, Scrollspy, and Back-to-Top
+ * Piyush Prajapati — Senior Mobile Engineer Portfolio
+ * Client Interactions: Navigation Drawer, Scrollspy, and Scroll Controls
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // ==========================================
-  // 1. Dynamic Rotating Typing Effect
-  // ==========================================
-  const typingEl = document.getElementById('typing');
-  const phrases = [
-    'Native Android Applications (Kotlin & Compose)',
-    'Cross-Platform Apps with React Native',
-    'High-Performance Mobile Architectures',
-    'Real-time & Offline-First Mobile Solutions',
-    'Scalable Apps with 60+ Successful Launches'
-  ];
-
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typingSpeed = 60;
-
-  function typeEffect() {
-    if (!typingEl) return;
-
-    const currentPhrase = phrases[phraseIndex];
-
-    if (isDeleting) {
-      typingEl.textContent = currentPhrase.substring(0, charIndex - 1);
-      charIndex--;
-      typingSpeed = 30;
-    } else {
-      typingEl.textContent = currentPhrase.substring(0, charIndex + 1);
-      charIndex++;
-      typingSpeed = 65;
-    }
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      // Pause at full word
-      typingSpeed = 1800;
-      isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      typingSpeed = 400;
-    }
-
-    setTimeout(typeEffect, typingSpeed);
-  }
-
-  typeEffect();
-
-  // ==========================================
-  // 2. Mobile Drawer Navigation Toggle
-  // ==========================================
+  // ------------------------------------------------------------------------
+  // 1. Mobile Navigation Drawer
+  // ------------------------------------------------------------------------
   const menuToggle = document.getElementById('menuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
-  const mobileLinks = document.querySelectorAll('.mobile-link, .mobile-drawer-actions a');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-menu-footer a');
 
   function openMobileMenu() {
     if (!menuToggle || !mobileDrawer) return;
@@ -85,21 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Close when clicking any nav link inside drawer
-    mobileLinks.forEach(link => {
+    mobileNavLinks.forEach((link) => {
       link.addEventListener('click', () => {
         closeMobileMenu();
       });
     });
 
-    // Close when clicking outside of the drawer
     document.addEventListener('click', (e) => {
       if (!mobileDrawer.contains(e.target) && !menuToggle.contains(e.target)) {
         closeMobileMenu();
       }
     });
 
-    // Close on Escape key
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         closeMobileMenu();
@@ -107,51 +57,51 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ==========================================
-  // 3. Scrollspy - Highlight Active Nav Links
-  // ==========================================
+  // ------------------------------------------------------------------------
+  // 2. Navigation Scrollspy
+  // ------------------------------------------------------------------------
   const sections = document.querySelectorAll('section[id]');
-  const desktopNavLinks = document.querySelectorAll('.desktop-nav .nav-link');
-  const drawerNavLinks = document.querySelectorAll('.mobile-nav .mobile-link');
+  const desktopLinks = document.querySelectorAll('.nav-links .nav-item');
+  const drawerLinks = document.querySelectorAll('.mobile-nav .mobile-nav-link');
 
-  function highlightNavigation() {
-    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  function updateActiveNav() {
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-    sections.forEach(section => {
-      const sectionHeight = section.offsetHeight;
-      const sectionTop = section.offsetTop - 140;
-      const sectionId = section.getAttribute('id');
+    sections.forEach((section) => {
+      const top = section.offsetTop - 120;
+      const height = section.offsetHeight;
+      const id = section.getAttribute('id');
 
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        desktopNavLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
+      if (scrollPosition >= top && scrollPosition < top + height) {
+        desktopLinks.forEach((item) => {
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
           } else {
-            link.classList.remove('active');
+            item.classList.remove('active');
           }
         });
 
-        drawerNavLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
+        drawerLinks.forEach((item) => {
+          if (item.getAttribute('href') === `#${id}`) {
+            item.classList.add('active');
           } else {
-            link.classList.remove('active');
+            item.classList.remove('active');
           }
         });
       }
     });
   }
 
-  window.addEventListener('scroll', highlightNavigation, { passive: true });
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
 
-  // ==========================================
-  // 4. Back to Top Button
-  // ==========================================
+  // ------------------------------------------------------------------------
+  // 3. Back to Top Button
+  // ------------------------------------------------------------------------
   const backToTopBtn = document.getElementById('backToTop');
 
   if (backToTopBtn) {
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 350) {
+      if (window.pageYOffset > 320) {
         backToTopBtn.classList.add('is-visible');
       } else {
         backToTopBtn.classList.remove('is-visible');
@@ -162,6 +112,30 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
+      });
+    });
+  }
+
+  // ------------------------------------------------------------------------
+  // 4. Project Category Filtering
+  // ------------------------------------------------------------------------
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card[data-platform]');
+
+  if (filterBtns.length && projectCards.length) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach((card) => {
+          if (filter === 'all' || card.getAttribute('data-platform') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
   }
