@@ -28,7 +28,7 @@
       <!-- Desktop Primary Navigation -->
       <nav class="nav-links" aria-label="Primary Navigation">
         <a href="#about" class="nav-item">About</a>
-        <a href="#stack" class="nav-item">Architecture</a>
+        <a href="#stack" class="nav-item">Skills</a>
         <a href="#experience" class="nav-item">Experience</a>
         <a href="#projects" class="nav-item">Projects</a>
         <a href="#contact" class="nav-item">Contact</a>
@@ -73,7 +73,7 @@
     <div class="mobile-menu" id="mobileDrawer" aria-hidden="true">
       <nav class="mobile-nav" aria-label="Mobile Navigation">
         <a href="#about" class="mobile-nav-link">About</a>
-        <a href="#stack" class="mobile-nav-link">Architecture & Stack</a>
+        <a href="#stack" class="mobile-nav-link">Skills & Architecture</a>
         <a href="#experience" class="mobile-nav-link">Experience</a>
         <a href="#projects" class="mobile-nav-link">Selected Work</a>
         <a href="#contact" class="mobile-nav-link">Contact</a>
@@ -117,7 +117,7 @@
       </p>
 
       <p class="hero-bio">
-        10+ years architecting and shipping 60+ production applications across Healthcare, On-Demand Logistics, E-Commerce, and Real-Time Communication. Strong advocate of Clean Architecture, predictable concurrency via Kotlin Coroutines/Flow, and offline-first reliability.Experienced in AI-assisted software development, leveraging AI tools to enhance development workflows, troubleshoot complex issues, review code, and refactor existing implementations.
+        10+ years architecting and shipping 60+ production applications across Healthcare, On-Demand Logistics, E-Commerce, and Real-Time Communication. Strong advocate of Clean Architecture, predictable concurrency via Kotlin Coroutines/Flow, and offline-first reliability. Experienced in AI-assisted software development, leveraging AI tools to enhance development workflows, troubleshoot complex issues, review code, and refactor existing implementations.
       </p>
 
       <!-- Purposeful Hero CTAs (No redundancy with Header) -->
@@ -135,7 +135,7 @@
         </a>
 
         <a href="#stack" class="btn-ghost">
-          <span>Technical Skill ↓</span>
+          <span>Technical Skills ↓</span>
         </a>
       </div>
 
@@ -155,11 +155,6 @@
           <span class="metric-val">Native & Cross Platform</span>
           <span class="metric-lbl">Kotlin, Compose & React Native</span>
         </div>
-        <div class="metric-divider" aria-hidden="true"></div>
-        <!-- <div class="metric-item">
-          <span class="metric-val">Clean Arch</span>
-          <span class="metric-lbl">MVVM, Hilt, Coroutines, Flow</span>
-        </div> -->
       </div>
     </section>
 
@@ -192,7 +187,7 @@
               </svg>
               <h4>Mobile Core Systems</h4>
             </div>
-            <p>Deep expertise in Android SDK, Kotlin, Java, React Native, Jetpack Compose, performance optimization, memory profiling, multimedia, real-time communication, and high-performance application development.</p>
+            <p>Native Android and cross-platform architecture focused on rapid startup latency, leak-free memory management, fluid 60fps rendering, and production crash rates strictly below 0.2%.</p>
           </div>
 
           <div class="focus-cell">
@@ -202,31 +197,10 @@
                 <polyline points="2 17 12 22 22 17"></polyline>
                 <polyline points="2 12 12 17 22 12"></polyline>
               </svg>
-              <h4>Architecture & State</h4>
+              <h4>Architecture & Reliability</h4>
             </div>
-            <p>Clean Architecture, MVVM, MVP, Modular Architecture, SOLID principles, Repository Pattern, Kotlin Coroutines, StateFlow, SharedFlow, LiveData, Redux, Redux Toolkit, and dependency injection with Dagger Hilt and offline-first Room databases.</p>
+            <p>Enterprise mobile design adhering to Clean Architecture, modular codebases, structured concurrency with Kotlin Flow, offline-first Room databases, and resilient real-time streaming.</p>
           </div>
-
-          <!-- <div class="focus-cell">
-            <div class="focus-header">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cell-icon">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-              <h4>Low-Latency Real-Time</h4>
-            </div>
-            <p>Real-time Twilio & WebRTC voice/video pipelines, bi-directional WebSockets, GPS location tracking, and Bluetooth (BLE).</p>
-          </div> -->
-
-          <!-- <div class="focus-cell">
-            <div class="focus-header">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cell-icon">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 14 14"></polyline>
-              </svg>
-              <h4>Production Standards</h4>
-            </div>
-            <p>Rigorous test automation (Espresso/Unit), CI/CD release pipelines, crash rate monitoring (< 0.2%), and Play Store governance.</p>
-          </div> -->
         </div>
       </div>
     </section>
@@ -234,8 +208,436 @@
     <!-- Technical Stack & Architecture Section -->
     <section class="section" id="stack">
       <div class="section-title-wrap">
-        <span class="section-mono">02 : ARCHITECTURE</span>
-        <h2 class="section-heading">Technical Skill</h2>
+        <span class="section-mono">02 : ARCHITECTURE & SKILLS</span>
+        <h2 class="section-heading">Technical Skills & Architecture</h2>
+      </div>
+
+      <!-- Horizontal Running Skills Slider (Marquee Ticker) -->
+      <div class="skills-slider-showcase" aria-label="Core Technical Skills Running Slider">
+        <div class="skills-marquee-wrapper">
+          <!-- Track 1: Core Languages & Mobile Platforms (Running Left) -->
+          <div class="skills-marquee-track track-left">
+            <div class="skills-marquee-group">
+              <!-- Kotlin -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-kotlin">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <defs>
+                      <linearGradient id="kg" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#7F52FF"/>
+                        <stop offset="50%" stop-color="#C711E1"/>
+                        <stop offset="100%" stop-color="#E44857"/>
+                      </linearGradient>
+                    </defs>
+                    <path fill="url(#kg)" d="M4 4h24L16 16l12 12H4z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Kotlin</span>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-java">
+                  <svg viewBox="0 0 32 32" width="24" height="24">
+                    <path fill="#e76f00" d="M12.5 22.8c0 0-2.3.3-3.3.4 3.7 1.8 11.2 1.5 14.8-.2-1.3-.8-3.7-.8-3.7-.8s3.4-.6 5.8-2.6c-9.3 2.8-13.6 3.2-13.6 3.2z"/>
+                    <path fill="#5382a1" d="M11.6 19.3c0 0-2.4.4-3.5.6 4.3 1.6 10.9 1.4 15.5-.2-1.6-.7-4.1-.7-4.1-.7s3.1-.7 5.1-2.4c-9.8 2.3-13 2.7-13 2.7z"/>
+                    <path fill="#e76f00" d="M19.1 13.6c2.4 2.4-1.2 4.4-1.2 4.4s4.4-1.8 2.2-4.8c-2.3-3-4.5-4.4 3.5-8.2-6.5 1.5-8.2 4.9-4.5 8.6z"/>
+                    <path fill="#5382a1" d="M25.7 25.1c-6.8 1.9-17.5 2-20.2.1 0 0-1.2.9 1.3 1.6 8 2.2 21.6 1.4 25.4-1.4 0 0-.6-.3-6.5-.3z"/>
+                    <path fill="#e76f00" d="M15.4 6.8c-1.8 2.8 1.3 5.4 3.6 7.4 1.1.9 2 1.9 2.5 3 1.1-1.3 1.2-2.9.3-4.4-1.4-2.5-4.4-4-6.4-6z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Java</span>
+              </div>
+
+              <!-- React Native -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-react">
+                  <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(30 16 16)"/>
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(90 16 16)"/>
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(150 16 16)"/>
+                    <circle cx="16" cy="16" r="2.2" fill="#61dafb"/>
+                  </svg>
+                </div>
+                <span class="skill-name">React Native</span>
+              </div>
+
+              <!-- TypeScript -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-ts">
+                  <span class="badge-text-ts">TS</span>
+                </div>
+                <span class="skill-name">TypeScript</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-js">
+                  <span class="badge-text-js">JS</span>
+                </div>
+                <span class="skill-name">JavaScript</span>
+              </div>
+
+              <!-- Android SDK -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-android">
+                  <svg viewBox="0 0 32 32" width="24" height="24">
+                    <path fill="#3ddc84" d="M9 13.5a1.2 1.2 0 0 0-1.2 1.2v7.6a1.2 1.2 0 0 0 2.4 0v-7.6A1.2 1.2 0 0 0 9 13.5zm14 0a1.2 1.2 0 0 0-1.2 1.2v7.6a1.2 1.2 0 0 0 2.4 0v-7.6a1.2 1.2 0 0 0-1.2-1.2zm-10.7-3.2L11 8.2a.6.6 0 1 0-.9-.7l-1.4 2.2a9.6 9.6 0 0 0-2.3 2.1h19.2a9.6 9.6 0 0 0-2.3-2.1l-1.4-2.2a.6.6 0 1 0-.9.7l1.3 2.1a9.5 9.5 0 0 0-5.9-.1zM12.5 10.5a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zm7 0a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zM11.5 13.5h9v9.2a1.8 1.8 0 0 1-1.8 1.8h-5.4a1.8 1.8 0 0 1-1.8-1.8v-9.2zm1.5 11.5a1.2 1.2 0 0 0-1.2 1.2v2.6a1.2 1.2 0 0 0 2.4 0v-2.6a1.2 1.2 0 0 0-1.2-1.2zm6 0a1.2 1.2 0 0 0-1.2 1.2v2.6a1.2 1.2 0 0 0 2.4 0v-2.6a1.2 1.2 0 0 0-1.2-1.2z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Android SDK</span>
+              </div>
+
+              <!-- Jetpack Compose -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-compose">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#4285f4" d="M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z" fill-opacity="0.15" stroke="#4285f4" stroke-width="1.8"/>
+                    <path fill="#3ddc84" d="M12.5 12l-3.5 4 3.5 4M19.5 12l3.5 4-3.5 4" stroke="#3ddc84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="16" r="2" fill="#4285f4"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Jetpack Compose</span>
+              </div>
+
+              <!-- Dagger Hilt -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-hilt">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M7 25l9-9m0 0l9-9M16 16l4 4m-4-4l-4-4" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="25" cy="7" r="3" fill="#2dd4bf"/>
+                    <path d="M5 27l2-2" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Dagger Hilt</span>
+              </div>
+
+              <!-- Coroutines & Flow -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-coroutines">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M6 16c4-8 8-8 12 0s8 8 12 0" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M6 22c3-5 6-5 9 0s6 5 9 0" stroke="#a855f7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+                    <circle cx="18" cy="16" r="2.5" fill="#e9d5ff"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Coroutines & Flow</span>
+              </div>
+            </div>
+
+            <!-- Duplicate Group 1 for Seamless Infinite Loop -->
+            <div class="skills-marquee-group" aria-hidden="true">
+              <!-- Kotlin -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-kotlin">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="url(#kg)" d="M4 4h24L16 16l12 12H4z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Kotlin</span>
+              </div>
+
+              <!-- Java -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-java">
+                  <svg viewBox="0 0 32 32" width="24" height="24">
+                    <path fill="#e76f00" d="M12.5 22.8c0 0-2.3.3-3.3.4 3.7 1.8 11.2 1.5 14.8-.2-1.3-.8-3.7-.8-3.7-.8s3.4-.6 5.8-2.6c-9.3 2.8-13.6 3.2-13.6 3.2z"/>
+                    <path fill="#5382a1" d="M11.6 19.3c0 0-2.4.4-3.5.6 4.3 1.6 10.9 1.4 15.5-.2-1.6-.7-4.1-.7-4.1-.7s3.1-.7 5.1-2.4c-9.8 2.3-13 2.7-13 2.7z"/>
+                    <path fill="#e76f00" d="M19.1 13.6c2.4 2.4-1.2 4.4-1.2 4.4s4.4-1.8 2.2-4.8c-2.3-3-4.5-4.4 3.5-8.2-6.5 1.5-8.2 4.9-4.5 8.6z"/>
+                    <path fill="#5382a1" d="M25.7 25.1c-6.8 1.9-17.5 2-20.2.1 0 0-1.2.9 1.3 1.6 8 2.2 21.6 1.4 25.4-1.4 0 0-.6-.3-6.5-.3z"/>
+                    <path fill="#e76f00" d="M15.4 6.8c-1.8 2.8 1.3 5.4 3.6 7.4 1.1.9 2 1.9 2.5 3 1.1-1.3 1.2-2.9.3-4.4-1.4-2.5-4.4-4-6.4-6z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Java</span>
+              </div>
+
+              <!-- React Native -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-react">
+                  <svg viewBox="0 0 32 32" width="24" height="24" fill="none">
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(30 16 16)"/>
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(90 16 16)"/>
+                    <ellipse cx="16" cy="16" rx="4" ry="11" stroke="#61dafb" stroke-width="1.8" transform="rotate(150 16 16)"/>
+                    <circle cx="16" cy="16" r="2.2" fill="#61dafb"/>
+                  </svg>
+                </div>
+                <span class="skill-name">React Native</span>
+              </div>
+
+              <!-- TypeScript -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-ts">
+                  <span class="badge-text-ts">TS</span>
+                </div>
+                <span class="skill-name">TypeScript</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-js">
+                  <span class="badge-text-js">JS</span>
+                </div>
+                <span class="skill-name">JavaScript</span>
+              </div>
+
+              <!-- Android SDK -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-android">
+                  <svg viewBox="0 0 32 32" width="24" height="24">
+                    <path fill="#3ddc84" d="M9 13.5a1.2 1.2 0 0 0-1.2 1.2v7.6a1.2 1.2 0 0 0 2.4 0v-7.6A1.2 1.2 0 0 0 9 13.5zm14 0a1.2 1.2 0 0 0-1.2 1.2v7.6a1.2 1.2 0 0 0 2.4 0v-7.6a1.2 1.2 0 0 0-1.2-1.2zm-10.7-3.2L11 8.2a.6.6 0 1 0-.9-.7l-1.4 2.2a9.6 9.6 0 0 0-2.3 2.1h19.2a9.6 9.6 0 0 0-2.3-2.1l-1.4-2.2a.6.6 0 1 0-.9.7l1.3 2.1a9.5 9.5 0 0 0-5.9-.1zM12.5 10.5a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zm7 0a.7.7 0 1 1 0-1.4.7.7 0 0 1 0 1.4zM11.5 13.5h9v9.2a1.8 1.8 0 0 1-1.8 1.8h-5.4a1.8 1.8 0 0 1-1.8-1.8v-9.2zm1.5 11.5a1.2 1.2 0 0 0-1.2 1.2v2.6a1.2 1.2 0 0 0 2.4 0v-2.6a1.2 1.2 0 0 0-1.2-1.2zm6 0a1.2 1.2 0 0 0-1.2 1.2v2.6a1.2 1.2 0 0 0 2.4 0v-2.6a1.2 1.2 0 0 0-1.2-1.2z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Android SDK</span>
+              </div>
+
+              <!-- Jetpack Compose -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-compose">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#4285f4" d="M16 5l9.5 5.5v11L16 27l-9.5-5.5v-11z" fill-opacity="0.15" stroke="#4285f4" stroke-width="1.8"/>
+                    <path fill="#3ddc84" d="M12.5 12l-3.5 4 3.5 4M19.5 12l3.5 4-3.5 4" stroke="#3ddc84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="16" cy="16" r="2" fill="#4285f4"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Jetpack Compose</span>
+              </div>
+
+              <!-- Dagger Hilt -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-hilt">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M7 25l9-9m0 0l9-9M16 16l4 4m-4-4l-4-4" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="25" cy="7" r="3" fill="#2dd4bf"/>
+                    <path d="M5 27l2-2" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Dagger Hilt</span>
+              </div>
+
+              <!-- Coroutines & Flow -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-coroutines">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M6 16c4-8 8-8 12 0s8 8 12 0" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M6 22c3-5 6-5 9 0s6 5 9 0" stroke="#a855f7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+                    <circle cx="18" cy="16" r="2.5" fill="#e9d5ff"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Coroutines & Flow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Track 2: State, Libraries, Cloud & Real-Time (Running Right) -->
+          <div class="skills-marquee-track track-right">
+            <div class="skills-marquee-group">
+              <!-- Redux Toolkit -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-redux">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#764abc" d="M16 6.5c-4.1 0-7.5 2.5-7.5 5.5 0 1.2.6 2.3 1.6 3.2-1.9 1-3.1 2.4-3.1 3.9 0 3 4.1 5.4 9 5.4s9-2.4 9-5.4c0-1.5-1.2-2.9-3.1-3.9 1-.9 1.6-2 1.6-3.2 0-3-3.4-5.5-7.5-5.5zm0 2.2c2.9 0 5.3 1.5 5.3 3.3 0 1.1-.9 2.1-2.4 2.7-1.1-.3-2-.5-2.9-.5s-1.8.2-2.9.5c-1.5-.6-2.4-1.6-2.4-2.7 0-1.8 2.4-3.3 5.3-3.3zm-5.6 10.4c.9 0 1.9.2 3 .5-1.5 1-2.4 2.1-2.4 3.3 0 .7.4 1.4 1.1 1.9-2.9-.4-4.9-1.9-4.9-3.5 0-1.1.9-2.1 3.2-2.2zm11.2 0c2.3.1 3.2 1.1 3.2 2.2 0 1.6-2 3.1-4.9 3.5.7-.5 1.1-1.2 1.1-1.9 0-1.2-.9-2.3-2.4-3.3 1.1-.3 2.1-.5 3-.5z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Redux Toolkit</span>
+              </div>
+
+              <!-- Room Database -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-room">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <ellipse cx="16" cy="9" rx="9" ry="4" stroke="#34d399" stroke-width="2"/>
+                    <path d="M7 9v7c0 2.2 4 4 9 4s9-1.8 9-4V9" stroke="#34d399" stroke-width="2"/>
+                    <path d="M7 16v7c0 2.2 4 4 9 4s9-1.8 9-4v-7" stroke="#34d399" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Room Database</span>
+              </div>
+
+              <!-- Retrofit & Axios -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-networking">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M8 12h16m0 0l-4-4m4 4l-4 4" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 20H8m0 0l4-4m-4 4l4 4" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Retrofit & Axios</span>
+              </div>
+
+              <!-- Firebase -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-firebase">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ffa000" d="M7.4 23.3L12.7 7.1c.2-.6 1-.7 1.3-.2l3.4 6.3z"/>
+                    <path fill="#f57c00" d="M7.4 23.3l7.9-14.7c.3-.5 1-.4 1.2.1l2.4 4.5z"/>
+                    <path fill="#ffca28" d="M19.1 10.7l2.8-5.3c.3-.6 1.1-.6 1.4 0l4.3 17.9z"/>
+                    <path fill="#ffa000" d="M6.3 24.2l1.1-.9 11.5-6.5 4.3 6.5-16.9.9z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Firebase</span>
+              </div>
+
+              <!-- Google Maps SDK -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-maps">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ea4335" d="M16 4a8 8 0 0 0-8 8c0 6 8 16 8 16s8-10 8-16a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Google Maps SDK</span>
+              </div>
+
+              <!-- Twilio & WebRTC -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-twilio">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <circle cx="16" cy="16" r="11" fill="none" stroke="#f22f46" stroke-width="2.5"/>
+                    <circle cx="12" cy="12" r="2.2" fill="#f22f46"/>
+                    <circle cx="20" cy="12" r="2.2" fill="#f22f46"/>
+                    <circle cx="12" cy="20" r="2.2" fill="#f22f46"/>
+                    <circle cx="20" cy="20" r="2.2" fill="#f22f46"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Twilio & WebRTC</span>
+              </div>
+
+              <!-- ExoPlayer -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-exoplayer">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <rect x="5" y="7" width="22" height="18" rx="4" stroke="#fb923c" stroke-width="2"/>
+                    <polygon points="13,11 22,16 13,21" fill="#fb923c"/>
+                  </svg>
+                </div>
+                <span class="skill-name">ExoPlayer</span>
+              </div>
+
+              <!-- Socket.IO -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-socket">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ffffff" d="M16 5a11 11 0 1 0 11 11A11 11 0 0 0 16 5zm1.5 16.5l-4-3.5h3v-4.5h2v4.5h3z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Socket.IO</span>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-git">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#f05032" d="M27.7 14.3l-10-10a2.4 2.4 0 0 0-3.4 0l-10 10a2.4 2.4 0 0 0 0 3.4l10 10a2.4 2.4 0 0 0 3.4 0l10-10a2.4 2.4 0 0 0 0-3.4zM16 23.2a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm-1.8-6.6a1.8 1.8 0 1 1-2.4-2.4l3.1-3.1a1.8 1.8 0 1 1 1.3 1.3l-2 2zm5.4 0a1.8 1.8 0 0 1-1.3 1.3v3.5a1.8 1.8 0 0 1-1.2.5 1.8 1.8 0 0 1-1.8-1.8v-5.3a1.8 1.8 0 0 1 1.2-1.7 1.8 1.8 0 1 1 3.1 3.5z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+            </div>
+
+            <!-- Duplicate Group 2 for Seamless Infinite Loop -->
+            <div class="skills-marquee-group" aria-hidden="true">
+              <!-- Redux Toolkit -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-redux">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#764abc" d="M16 6.5c-4.1 0-7.5 2.5-7.5 5.5 0 1.2.6 2.3 1.6 3.2-1.9 1-3.1 2.4-3.1 3.9 0 3 4.1 5.4 9 5.4s9-2.4 9-5.4c0-1.5-1.2-2.9-3.1-3.9 1-.9 1.6-2 1.6-3.2 0-3-3.4-5.5-7.5-5.5zm0 2.2c2.9 0 5.3 1.5 5.3 3.3 0 1.1-.9 2.1-2.4 2.7-1.1-.3-2-.5-2.9-.5s-1.8.2-2.9.5c-1.5-.6-2.4-1.6-2.4-2.7 0-1.8 2.4-3.3 5.3-3.3zm-5.6 10.4c.9 0 1.9.2 3 .5-1.5 1-2.4 2.1-2.4 3.3 0 .7.4 1.4 1.1 1.9-2.9-.4-4.9-1.9-4.9-3.5 0-1.1.9-2.1 3.2-2.2zm11.2 0c2.3.1 3.2 1.1 3.2 2.2 0 1.6-2 3.1-4.9 3.5.7-.5 1.1-1.2 1.1-1.9 0-1.2-.9-2.3-2.4-3.3 1.1-.3 2.1-.5 3-.5z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Redux Toolkit</span>
+              </div>
+
+              <!-- Room Database -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-room">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <ellipse cx="16" cy="9" rx="9" ry="4" stroke="#34d399" stroke-width="2"/>
+                    <path d="M7 9v7c0 2.2 4 4 9 4s9-1.8 9-4V9" stroke="#34d399" stroke-width="2"/>
+                    <path d="M7 16v7c0 2.2 4 4 9 4s9-1.8 9-4v-7" stroke="#34d399" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Room Database</span>
+              </div>
+
+              <!-- Retrofit & Axios -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-networking">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <path d="M8 12h16m0 0l-4-4m4 4l-4 4" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 20H8m0 0l4-4m-4 4l4 4" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Retrofit & Axios</span>
+              </div>
+
+              <!-- Firebase -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-firebase">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ffa000" d="M7.4 23.3L12.7 7.1c.2-.6 1-.7 1.3-.2l3.4 6.3z"/>
+                    <path fill="#f57c00" d="M7.4 23.3l7.9-14.7c.3-.5 1-.4 1.2.1l2.4 4.5z"/>
+                    <path fill="#ffca28" d="M19.1 10.7l2.8-5.3c.3-.6 1.1-.6 1.4 0l4.3 17.9z"/>
+                    <path fill="#ffa000" d="M6.3 24.2l1.1-.9 11.5-6.5 4.3 6.5-16.9.9z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Firebase</span>
+              </div>
+
+              <!-- Google Maps SDK -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-maps">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ea4335" d="M16 4a8 8 0 0 0-8 8c0 6 8 16 8 16s8-10 8-16a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Google Maps SDK</span>
+              </div>
+
+              <!-- Twilio & WebRTC -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-twilio">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <circle cx="16" cy="16" r="11" fill="none" stroke="#f22f46" stroke-width="2.5"/>
+                    <circle cx="12" cy="12" r="2.2" fill="#f22f46"/>
+                    <circle cx="20" cy="12" r="2.2" fill="#f22f46"/>
+                    <circle cx="12" cy="20" r="2.2" fill="#f22f46"/>
+                    <circle cx="20" cy="20" r="2.2" fill="#f22f46"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Twilio & WebRTC</span>
+              </div>
+
+              <!-- ExoPlayer -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-exoplayer">
+                  <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                    <rect x="5" y="7" width="22" height="18" rx="4" stroke="#fb923c" stroke-width="2"/>
+                    <polygon points="13,11 22,16 13,21" fill="#fb923c"/>
+                  </svg>
+                </div>
+                <span class="skill-name">ExoPlayer</span>
+              </div>
+
+              <!-- Socket.IO -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-socket">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#ffffff" d="M16 5a11 11 0 1 0 11 11A11 11 0 0 0 16 5zm1.5 16.5l-4-3.5h3v-4.5h2v4.5h3z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Socket.IO</span>
+              </div>
+
+              <!-- Git & GitHub -->
+              <div class="skill-card">
+                <div class="skill-icon-badge badge-git">
+                  <svg viewBox="0 0 32 32" width="22" height="22">
+                    <path fill="#f05032" d="M27.7 14.3l-10-10a2.4 2.4 0 0 0-3.4 0l-10 10a2.4 2.4 0 0 0 0 3.4l10 10a2.4 2.4 0 0 0 3.4 0l10-10a2.4 2.4 0 0 0 0-3.4zM16 23.2a1.8 1.8 0 1 1 0-3.6 1.8 1.8 0 0 1 0 3.6zm-1.8-6.6a1.8 1.8 0 1 1-2.4-2.4l3.1-3.1a1.8 1.8 0 1 1 1.3 1.3l-2 2zm5.4 0a1.8 1.8 0 0 1-1.3 1.3v3.5a1.8 1.8 0 0 1-1.2.5 1.8 1.8 0 0 1-1.8-1.8v-5.3a1.8 1.8 0 0 1 1.2-1.7 1.8 1.8 0 1 1 3.1 3.5z"/>
+                  </svg>
+                </div>
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="stack-grid">
@@ -438,12 +840,12 @@
         <h2 class="section-heading">Featured Mobile Engineering</h2>
       </div>
 
-      <!-- Filter Controls for 24 Projects -->
-      <!-- <div class="projects-filter-bar">
-        <button class="filter-btn active" data-filter="all">All Projects (24)</button>
-        <button class="filter-btn" data-filter="rn">React Native (3)</button>
+      <!-- Interactive Platform Filter Controls -->
+      <div class="projects-filter-bar" aria-label="Filter projects by platform">
+        <button class="filter-btn active" data-filter="all">All Projects (26)</button>
         <button class="filter-btn" data-filter="android">Native Android (21)</button>
-      </div> -->
+        <button class="filter-btn" data-filter="rn">React Native (5)</button>
+      </div>
 
       <div class="projects-grid">
         <!-- 1. SkyyTask -->
@@ -543,7 +945,7 @@
             Football match booking and turf discovery application featuring multi-lingual localization, interactive venue maps, team match-making, and in-app checkout.
           </p>
           <div class="project-stack">
-            <span>JavaScript</span><span>TypeScript</span><span>Localization (i18n)</span><span>Google APIs</span><span>Maps</span><span>Redux Toolkit</span><span>Axios</span>
+            <span>JavaScript</span><span>TypeScript</span><span>Localization (i18n)</span><span>Google Maps SDK</span><span>Redux Toolkit</span><span>Axios</span>
           </div>
         </article>
 
@@ -1232,7 +1634,7 @@
 
       <nav class="footer-links" aria-label="Footer Navigation">
         <a href="#about" class="footer-link">About</a>
-        <a href="#stack" class="footer-link">Architecture</a>
+        <a href="#stack" class="footer-link">Skills</a>
         <a href="#experience" class="footer-link">Experience</a>
         <a href="#projects" class="footer-link">Projects</a>
         <a href="#contact" class="footer-link">Contact</a>
