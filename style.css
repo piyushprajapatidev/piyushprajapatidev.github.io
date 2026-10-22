@@ -249,11 +249,26 @@ main {
   background: var(--bg-surface);
   color: var(--text-primary);
   transition: all var(--transition-fast);
+  white-space: nowrap;
 }
 
 .btn-resume-header:hover {
   background: var(--bg-surface-elevated);
   border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.btn-text-short {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .btn-coverletter-header .btn-text-full {
+    display: none;
+  }
+  .btn-coverletter-header .btn-text-short {
+    display: inline;
+  }
 }
 
 /* Mobile Toggle Button */
@@ -1625,6 +1640,21 @@ main {
   }
 }
 
+@media (max-width: 480px) {
+  .nav-actions {
+    gap: 6px;
+  }
+  .btn-resume-header {
+    padding: 5px 8px;
+    font-size: 12px;
+    gap: 4px;
+  }
+  .btn-resume-header svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+
 @media (max-width: 440px) {
   .metrics-bar {
     grid-template-columns: 1fr;
@@ -1632,5 +1662,15 @@ main {
 
   .brand-role {
     display: none;
+  }
+
+  .brand-monogram {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .brand-name {
+    font-size: 13.5px;
   }
 }
