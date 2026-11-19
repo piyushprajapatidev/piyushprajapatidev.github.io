@@ -1,5 +1,5 @@
 /**
- * Piyush Prajapati — Senior Mobile Engineer Portfolio
+ * Piyush Prajapati — Senior Application Developer Portfolio
  * Client Interactions: Navigation Drawer, Scrollspy, and Scroll Controls
  */
 
